@@ -1,0 +1,11 @@
+---
+:timeout: 20
+:concurrency: 25
+:pidfile: tmp/sidekiq.pid
+development:
+  :concurrency: 5
+production:
+  :logfile: log/sidekiq.log
+:queues:
+  - email
+  - default
